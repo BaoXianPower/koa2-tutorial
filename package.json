@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon  -e  ts,tsx  --exec ts-node src/app.ts",
+        "start": "pm2 start ./src/app.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -18,14 +19,22 @@
     },
     "homepage": "https://github.com/BaoXianPower/koa2-tutorial#readme",
     "dependencies": {
+        "@types/ip": "^1.1.0",
+        "@types/koa-static": "^4.0.1",
+        "@types/log4js": "^2.3.5",
+        "ip": "^1.1.5",
         "koa": "^2.13.1",
-        "koa-bodyparser": "^4.3.0"
+        "koa-bodyparser": "^4.3.0",
+        "koa-nunjucks-2": "^3.0.2",
+        "koa-static": "^5.0.0",
+        "log4js": "^6.3.0"
     },
     "devDependencies": {
         "@types/koa": "^2.11.7",
         "@types/koa-bodyparser": "^4.3.0",
         "@types/koa-router": "^7.4.1",
         "koa-router": "^10.0.0",
-        "nodemon": "^2.0.7"
+        "nodemon": "^2.0.7",
+        "pm2": "^4.5.4"
     }
 }

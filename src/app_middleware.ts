@@ -4,7 +4,7 @@
  * @Author: jbx
  * @Date: 2021-02-07 21:51:53
  */
-import * as Koa from "koa";
+import Koa from "koa";
 
 const app = new Koa();
 

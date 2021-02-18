@@ -5,7 +5,7 @@
  * @Date: 2021-02-07 22:35:41
  */
 
-import * as Koa from "koa";
+import Koa from "koa";
 
 const app = new Koa();
 
@@ -32,7 +32,7 @@ const app = new Koa();
 //     }
 // });
 
-import * as KoaRouter from "koa-router";
+import KoaRouter from "koa-router";
 const router = new KoaRouter();
 
 // 添加路由
